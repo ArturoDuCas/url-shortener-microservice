@@ -124,29 +124,6 @@ app.post('/api/shorturl', function(req, res) {
           }
         }
       });
-
-      // createUrl(inputUrl, (err, data) => {
-      //   if (err) {
-      //     console.log(err);
-      //     res.json({
-      //       error: "error creating the url"
-      //     })
-      //   } else {
-      //       findUrlByOriginalUrl(inputUrl, (err,data) => {
-      //         if(err) {
-      //           console.log(err);
-      //           res.json({
-      //             error: "no se encontro el url en la bd"
-      //           })
-      //         }  else {
-      //           console.log(data);
-      //           res.json({
-      //             error: "se encontro en la base de datos"
-      //           })
-      //         }
-      //       })
-      //   }
-      // });
     }
   });
 });
